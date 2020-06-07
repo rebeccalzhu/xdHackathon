@@ -19,9 +19,10 @@
         <div class="card">
             <h2>Me</h2>
             <p>Good morning! Take some time to check in with others today.</p>
-            <span id="profile" style="background-color: rgb(105, 207, 211);" class="profile-dot"></span>
+            <span id="profile" style="background-color: #d57df0;" class="profile-dot"></span>
             <div class="button-group">
-                <button style="background-color: #c2c2c2;"><a href="emotions.html" style="text-decoration: none; color: black;">update my color</a></button> </div>
+                <button style="background-color: #c2c2c2;"><a href="emotions.html"
+                        style="text-decoration: none; color: black;">update my color</a></button> </div>
         </div><br>
         <div class="card">
             <h2>Jane Smith (Mom)</h2>
@@ -46,11 +47,11 @@
         <div class="card">
             <h2>Aaron Smith (Brother)</h2>
             <p>Last contacted 1 day ago - Ideal frequency: every 2 days</p>
-            <span id="profile" style="background-color: rgb(150, 219, 173);" class="profile-dot"></span>
+            <span id="profile" style="background-color: #4287f5;" class="profile-dot"></span>
             <div class="button-group">
                 <button style="background-color: #c2c2c2;">say hello</button>
                 <button style="background-color: #c2c2c2;">set reminder</button>
-                <button style="background-color: #c2c2c2;">send colour</button>
+                <button id="myBtn" style="background-color: #c2c2c2;">send colour</button>
             </div>
         </div><br>
         <div class="card">
@@ -72,9 +73,82 @@
                 <button style="background-color: #c2c2c2;">set reminder</button>
                 <button style="background-color: #c2c2c2;">send colour</button>
             </div>
-        </div><br>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="container">
+                    <img src="assets/aaron.png" alt="Avatar" style="width:100%;">
+                    <p>Hello! What's new with you today?</p>
+                    <span class="time-right">11:00</span>
+                  </div>
+                  
+                  <div class="container darker">
+                    <img src="assets/aaron.png" alt="Avatar" class="right" style="width:100%;">
+                    <p>Hey! Not much. Thanks for asking! How about you?</p>
+                    <span class="time-left">11:01</span>
+                  </div>
+                  <div class="container">
+                    <img src="assets/aaron.png" alt="Avatar" style="width:100%;">
+                    <p>Sweet! Same for me, quarantine is just like usual.</p>
+                    <span class="time-right">11:02</span>
+                  </div>
+                  <div class="container">
+                    <img src="assets/aaron.png" alt="Avatar" style="width:100%;">
+                    <img src="assets/blue.png" alt="Avatar" style="width:100%;">
+                    <p style="font-weight: 2px">I'm feeling sad and anxious today.</p>
+                    <span class="time-right">11:06</span>
+                  </div>
+                  <div class="container darker">
+                    <img src="assets/aaron.png" alt="Avatar" class="right" style="width:100%;">
+                    <p>I'm really sorry to hear that :( Let's call later after dinner.</p>
+                    <span class="time-left">11:01</span>
+                  </div>
+                  <div class="container darker">
+                    <img src="assets/aaron.png" alt="Avatar" class="right" style="width:100%;">
+                    <img src="assets/purple.png" alt="Avatar" class="right" style="width:100%;">
+                    <p style="font-weight: 2px">I'm feeling happy and excited today.</p>
+                    <span class="time-left">11:05</span>
+                  </div>
+            </div>
+
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+        <br>
         <button class="button" onclick="history.go(-1)">
-		  <h2>Back</h2>
+            <h2>Back</h2>
         </button>
     </div>
 </body>
