@@ -94,3 +94,9 @@ img {
     text-align: left;
     padding: 15px 15px;
   }
+.row{
+  display: inline;
+}
+.col{
+  height: 300;
+}
