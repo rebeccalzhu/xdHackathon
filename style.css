@@ -1,0 +1,32 @@
+h1{
+    position: absolute;
+    width: 313px;
+    height: 79px;
+    left: 28px;
+    top: 137px;;
+    font-size: 61px;
+    font-family: Pacifico;
+    text-align: center;
+}
+.button{
+    position: absolute;
+    background-color: #C4C4C4;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+}
+.button1{
+    font-family: Pacifico;
+    width: 185px;
+    height: 63px;
+    left: 92px;
+    top: 301px;;
+}
+.button2{
+    font-family: Pacifico;
+    width: 185px;
+    height: 63px;
+    left: 92px;
+    top: 399px;
+}
