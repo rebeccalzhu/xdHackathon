@@ -7,6 +7,9 @@ h2,h3,h4,h5,h6 {
     font-family: "Oxygen", sans-serif;
     font-size: 20px;
 }
+h2 {
+	color: #1e547b;
+}
 body, html {
   height: 100%;
   background-color: #fff6de;
