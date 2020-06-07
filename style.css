@@ -26,3 +26,67 @@ body, html {
     text-decoration: none;
     color: white;
 }
+img {
+    width: 300px;
+    height: auto;
+}
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 150px 0;
+}
+/* for emotion buttons*/
+.button-group {
+    display: inline-block;
+}
+.button-group button {
+    border: none;
+    border-radius: 8px;
+    color: black; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    display: inline-block;
+  }
+  .button-group button:hover {
+      color: white;
+  }
+  /* Clear floats (clearfix hack) */
+  .button-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .button-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  .dot {
+    height: 150px;
+    width: 150px;
+    background-color: #bbb;
+    border-color: black;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .dot h2 {
+    padding: 50px 0;
+    font-size: 16px;
+  }
+  .profile-dot{
+    height: 65px;
+    width: 65px;
+    background-color: #bbb;
+    border-color: black;
+    border-radius: 50%;
+    float: right;
+    margin: -80px 0;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    padding: 15px 15px;
+  }
