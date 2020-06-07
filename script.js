@@ -20,26 +20,11 @@ function button1Clicked(id) {
     document.getElementById("word") = emotion1;
 }
 
-// THIS IS NOT FULLY FUNCTIONAL, please check over??
+// It's now functional
 function button2Clicked(id) {
-    emotion2 = id;
-    document.getElementById(emotion2).style.color = clicked;
 
-    // removes if it was checked before
-    if (document.getElementById(id).style.color.equals(clicked)) {
-        alert("Uh");
-        document.getElementById(id).style.color = unclicked;
-        if (emotion2 == id) {
-            emotion2 = "";
-        }
-        else if (emotion3 == id) {
-            emotion3 = "";
-        }
-    }
-    // adds if it's not checked yet
-    else {
+    if (document.getElementById(id).style.color != (clicked)){
         if (emotion2 == "") {
-            alert("Yes");
             emotion2 = id;
             document.getElementById(id).style.color = clicked;
         }
@@ -47,13 +32,14 @@ function button2Clicked(id) {
             emotion3 = id;
             document.getElementById(id).style.color = clicked;
         }
-    }
-    for (i = 0; i < emotions2.length; i++) {
-        if ((emotions2[i]) == emotion2 || emotions[i] == emotion3) {
-            continue;
+    } 
+    else {
+        document.getElementById(id).style.color = unclicked;
+        if (emotion2 == id) {
+            emotion2 = "";
         }
-        else {
-            document.getElementById(emotions2[i]).style.color = unclicked;
+        else if (emotion3 == id) {
+            emotion3 = "";
         }
-    }
+    }  
 }
